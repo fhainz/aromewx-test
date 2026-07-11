@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "TESTVERSION 0.0.5 - NumberSelector mit fest codiertem Default (46.635)",
+        "description": "TESTVERSION 0.0.6 - pures Voluptuous, kein selector-Modul, vol.Coerce(float)",
         "data": {
           "latitude": "Breitengrad"
         }

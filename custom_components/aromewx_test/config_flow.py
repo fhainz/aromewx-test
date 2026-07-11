@@ -1,7 +1,6 @@
 import voluptuous as vol
 
 from homeassistant.config_entries import ConfigFlow
-from homeassistant.helpers import selector
 
 from .const import DOMAIN
 
@@ -12,13 +11,7 @@ class AromeWxTestConfigFlow(ConfigFlow, domain=DOMAIN):
             step_id="user",
             data_schema=vol.Schema(
                 {
-                    vol.Required(
-                        "latitude", default=46.635
-                    ): selector.NumberSelector(
-                        selector.NumberSelectorConfig(
-                            step=0.0001, mode=selector.NumberSelectorMode.BOX
-                        )
-                    ),
+                    vol.Required("latitude", default=46.635): vol.Coerce(float),
                 }
             ),
         )
