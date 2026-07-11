@@ -1,0 +1,12 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "TESTVERSION 0.0.4 - NumberSelector mit hass.config.latitude",
+        "data": {
+          "latitude": "Breitengrad"
+        }
+      }
+    }
+  }
+}
