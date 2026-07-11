@@ -1,9 +1,11 @@
 {
   "domain": "aromewx_test",
   "name": "Arome WX Test",
-  "codeowners": ["@fhainz"],
+  "codeowners": [
+    "@fhainz"
+  ],
   "config_flow": true,
   "documentation": "https://example.com",
   "requirements": [],
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
