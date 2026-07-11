@@ -13,7 +13,7 @@ class AromeWxTestConfigFlow(ConfigFlow, domain=DOMAIN):
             data_schema=vol.Schema(
                 {
                     vol.Required(
-                        "latitude", default=self.hass.config.latitude
+                        "latitude", default=46.635
                     ): selector.NumberSelector(
                         selector.NumberSelectorConfig(
                             step=0.0001, mode=selector.NumberSelectorMode.BOX
